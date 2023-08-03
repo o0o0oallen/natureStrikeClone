@@ -8628,12 +8628,12 @@ window.__require = function e(t, i, a) {
                 console.log("cc.Mgr.UIMgr.currentShowUICount: " + cc.Mgr.UIMgr.currentShowUICount))
             },
             reduceShowUICount: function(e) {
-                this.currentShowUICount--,
+                /*this.currentShowUICount--,
                 this.currentShowUICount;
                 var t = this.openUINameList.indexOf(e);
                 t >= 0 && this.openUINameList.splice(t, 1),
                 cc.Mgr.UIMgr.currentShowUICount <= 0 && cc.Mgr.plantMgr.autoMerge(),
-                console.log("cc.Mgr.UIMgr.currentShowUICount: " + cc.Mgr.UIMgr.currentShowUICount)
+                console.log("cc.Mgr.UIMgr.currentShowUICount: " + cc.Mgr.UIMgr.currentShowUICount)*/
             },
             showLoading: function(e) {
                 if (e || cc.Mgr.game.isFacebook) {
