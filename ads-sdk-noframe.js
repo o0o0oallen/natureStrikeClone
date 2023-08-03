@@ -55,7 +55,7 @@ window.interstitialCallback = function interstitialCallback() {
 };
 
 function MiniGame_showBanner() {
-    console.log('show MiniGame banner ...');
+    /*console.log('show MiniGame banner ...');
 
     if (typeof minigame === 'undefined') {
         console.log('[MiniGame_showBanner] minigame is undefined');
@@ -81,7 +81,7 @@ function MiniGame_showBanner() {
             console.log('banner wait time up');
             MiniGame_showBanner();
         }, 3000);
-    }
+    }*/
 }
 
 // 启动minigame sdk
@@ -124,7 +124,7 @@ function MiniGameSDK_init() {
 }
 
 function MiniGame_showInterstitial(callback, failback) {
-    console.log('show MiniGame Interstitial ...');
+    /*console.log('show MiniGame Interstitial ...');
 
     if (typeof minigame === 'undefined') {
         console.log('[MiniGame_showInterstitial] minigame is undefined');
@@ -152,18 +152,23 @@ function MiniGame_showInterstitial(callback, failback) {
         if (failback != null && typeof failback == "function") {
             failback();
         }
-    }
+    }*/
 }
 
 function MiniGame_showReward() {
     console.log('show MiniGame Reward ...');
 
-    if (typeof minigame === 'undefined') {
+    /*if (typeof minigame === 'undefined') {
         console.log('[MiniGame_showReward] minigame is undefined');
         return;
+    }*/
+    console.info("====> show RewardedVideo success");
+    let callback = window.ENF.callback;
+    if (callback != null && typeof callback == "function") {
+        callback();
+        window.ENF.callback = null;
     }
-
-    let isRewardVideoReady = MiniGameAds.isRewardvideoReady();
+    /*let isRewardVideoReady = MiniGameAds.isRewardvideoReady();
     if (isRewardVideoReady) {
         // @ts-ignore
         MiniGameAds.showRewardedVideo().then(() => {
@@ -187,7 +192,7 @@ function MiniGame_showReward() {
         });
     } else {
         console.info("====> RewardedVideo not ready");
-    }
+    }*/
 }
 
 var ENFGad = {
@@ -222,7 +227,7 @@ var ENFGad = {
     },
     interstitial: function(callback, failback) {
         console.log("[ENFGad.interstitial] ...");
-        MiniGame_showInterstitial(callback, failback);
+        /*MiniGame_showInterstitial(callback, failback);*/
         return ;
     },
     reward: function() {
@@ -303,8 +308,8 @@ var ENFGad = {
 };
 
 function ENF_showInterstitialAd(callback, failback) {
-    console.log("ENF_showInterstitialAd");
-    ENFGad.interstitial(callback, failback);
+    /*console.log("ENF_showInterstitialAd");
+    ENFGad.interstitial(callback, failback);*/
 }
 
 function ENF_showRewardedVideoAd(callback, failback) {
