@@ -8622,10 +8622,10 @@ window.__require = function e(t, i, a) {
                 loading: cc.Node
             },
             addShowUICount: function(e) {
-                this.openUINameList || (this.openUINameList = []),
+                /*this.openUINameList || (this.openUINameList = []),
                 this.openUINameList.indexOf(e) >= 0 || (this.openUINameList.push(e),
                 this.currentShowUICount++,
-                console.log("cc.Mgr.UIMgr.currentShowUICount: " + cc.Mgr.UIMgr.currentShowUICount))
+                console.log("cc.Mgr.UIMgr.currentShowUICount: " + cc.Mgr.UIMgr.currentShowUICount))*/
             },
             reduceShowUICount: function(e) {
                 /*this.currentShowUICount--,
