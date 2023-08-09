@@ -112,15 +112,16 @@ function MiniGameSDK_start() {
 
 function MiniGameSDK_init() {
     console.log('init MiniGame SDK ...');
+    MiniGameSDK_start();
 
-    if (typeof minigame !== 'undefined') {
+    /*if (typeof minigame !== 'undefined') {
         //初始化 minigame sdk
         // @ts-ignore
         minigame.initializeAsync().then(function () {
             console.log("FB initializeAsync");
-            MiniGameSDK_start();
+            
         });
-    }
+    }*/
 }
 
 function MiniGame_showInterstitial(callback, failback) {
