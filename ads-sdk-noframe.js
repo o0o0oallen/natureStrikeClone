@@ -248,7 +248,7 @@ var ENFGad = {
     },
 
     correctPositions: function() {
-        console.log("correctPositions..");
+        /*console.log("correctPositions..");
         if (ENFGad.adObject && ENFGad.adsManager) {
             if (ENFGad.adObject.isLinear()) {
 
@@ -273,7 +273,7 @@ var ENFGad = {
                     "padding-left": PaddingLeft
                 });
             }
-        }
+        }*/
     },
     tickTimer: function () {
         if (ENFGad.iftickTimer == 1) {
