@@ -51,7 +51,7 @@ function ENF_setLoadingProgress(i) {
 
 
 window.interstitialCallback = function interstitialCallback() {
-    ENF_H5Sdk_athenaSend('imp_pause');
+    /*ENF_H5Sdk_athenaSend('imp_pause');*/
 };
 
 function MiniGame_showBanner() {
@@ -100,7 +100,7 @@ function MiniGameSDK_start() {
         //@ts-ignore
         minigame.startGameAsync().then(function () {
             console.log('[MiniGameSDK_start] startGameAsync succeeded');
-            MiniGame_showBanner();
+            /*MiniGame_showBanner();*/
             // 加载IDE指定的场景，这⾥假定第⼀个场景名称是startScene
             // GameConfig.startScene && Laya.Scene.open(GameConfig.startScene);
          })
